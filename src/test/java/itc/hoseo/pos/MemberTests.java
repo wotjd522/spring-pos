@@ -5,7 +5,6 @@ import itc.hoseo.pos.domain.Member;
 import itc.hoseo.pos.domain.repository.ItemRepository;
 import itc.hoseo.pos.domain.repository.MemberRepository;
 import itc.hoseo.pos.domain.repository.impl.HashMapItem;
-import itc.hoseo.pos.domain.repository.impl.HashMapMember;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -84,8 +83,8 @@ class MemberTests { // 여기를 누르면 전체 테스트
     @Test
     void test_HashItemTest(){
         ItemRepository itemRep = new HashMapItem();
-        Item i1 = new Item(1, "abda", 1, 312);
-        Item i2 = new Item(1, "asdf", 2, 333);
+        Item i1 = new Item(1, "wera", 1, 312);
+        Item i2 = new Item(1, "awer", 2, 333);
         Item i3 = new Item(3, "awer", 5, 2);
         Item i4 = new Item(5, "awer", 6, 23);
         itemRep.addItem(i1);
